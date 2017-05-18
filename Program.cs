@@ -11,7 +11,7 @@ namespace ConsoleApplication2
 {
     class Program
     {
-        static void Main()
+        static void MarkTwain()
         {
             string connectionString = @"Data Source=EPBYMINW0324\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True";
             //connection object
@@ -27,7 +27,11 @@ namespace ConsoleApplication2
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Cannot connect to DataBase. Details: " + e.ToString());
+ 
+                    Console.WriteLine("I can connect to DataBase. Details: " + e.ToString());
+                   Console.WriteLine("Oh, no! connect to DataBase. Details: " + e.ToString());
+                    Console.WriteLine("I cannot connect to DataBase. Details: " + e.ToString());
+                    Console.WriteLine("I like sweet potatoe with full connect to DataBase. Details: " + e.ToString());
                 }
 
                 SqlDataReader myReader = null;
@@ -128,17 +132,7 @@ namespace ConsoleApplication2
                 }
 
 
- //close connection
-                try
-                {
-                    myConnection.Close();
-
-                    Console.ReadKey();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Connection was not closed. Details: " + e.ToString());
-                }            }
+         }
         }
     }
 }
