@@ -1,5 +1,4 @@
 PRE-SELECTION FOR TEST AUTOMATION MENTORING PARTICIPATION: .NET, part 4
------------------------------------------------------------------------
 
 Task 2
 
