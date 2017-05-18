@@ -98,7 +98,6 @@ namespace ConsoleApplication2
                     storedProcedure.Parameters.Add(param1);
                     storedProcedure.Parameters.Add(param2);
                     myReader = storedProcedure.ExecuteReader();
-                   // Employees.Load(myReader);
                     Console.WriteLine("-----Results of Stored procedure-----");
                      while (myReader.Read())
                     {
