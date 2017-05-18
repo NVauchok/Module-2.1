@@ -126,7 +126,19 @@ namespace ConsoleApplication2
                 {
                     Console.WriteLine("Connection was not closed. Details: " + e.ToString());
                 }
-            }
+
+
+ //close connection
+                try
+                {
+                    myConnection.Close();
+
+                    Console.ReadKey();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Connection was not closed. Details: " + e.ToString());
+                }            }
         }
     }
 }
