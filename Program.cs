@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 using System.Data.SqlClient;
-//using System.Configuration;
 
 namespace ConsoleApplication2
 {
@@ -20,7 +19,6 @@ namespace ConsoleApplication2
             {
                 Console.WriteLine("Connection object:" + myConnection.GetType().Name);
                 myConnection.ConnectionString = connectionString;
-                //myConnection.ConnectionString = ConfigurationManager.AppSettings["connectionStr"];
 
                 //open connection
                 try
