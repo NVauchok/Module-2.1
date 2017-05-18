@@ -34,10 +34,7 @@ namespace ConsoleApplication2
                 //INSERT command
                 try
                 {
-                    //myReader = null;
                     SqlCommand insertCommand = new SqlCommand("Insert into Employees(LastName, FirstName, City) values ('Cayman', 'Joe', 'Minsk')", myConnection);
-                    //myReader = insertCommad.ExecuteReader();
-                    //myReader.Close();
                     insertCommand.ExecuteNonQuery();
                 }
 
