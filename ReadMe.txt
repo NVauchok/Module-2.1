@@ -12,3 +12,5 @@ Preparation:
 Implementation:
 -	Process different kinds of requests as SELECT, DELETE, UPDATE, INSERT using ADO.NET (do not use the requests described into the presentation and examples)
 -	Call at least one stored procedure (except CustOrderHist which is used in presentation) using ADO.NET
+
+-	Optional: Create your own stored procedure to the Northwind Database and process it using ADO.NET
