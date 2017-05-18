@@ -101,7 +101,7 @@ namespace ConsoleApplication2
                     Console.WriteLine("-----Results of Stored procedure-----");
                      while (myReader.Read())
                     {
-
+						Console.WriteLine("Results of Stored Procedure");
                         Console.WriteLine("Product Name: " + myReader["ProductName"].ToString());
                         Console.WriteLine("Total Purchase: " + myReader["TotalPurchase"].ToString());
                         Console.WriteLine("\n");
